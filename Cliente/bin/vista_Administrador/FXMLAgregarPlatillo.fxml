@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="594.0" prefWidth="964.0" style="-fx-background-color: f1f1f1f1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador_Administrador.AgregarPlatillo">
+   <children>
+      <Button layoutX="550.0" layoutY="486.0" mnemonicParsing="false" onAction="#goToFormInicial" text="Volver" />
+      <GridPane layoutX="316.0" layoutY="115.0" prefHeight="201.0" prefWidth="333.0">
+         <children>
+            <Label text="Nombre:" />
+            <Label text="Tamaño de la ración:" GridPane.rowIndex="1" />
+            <Label text="Piezas por porción:" GridPane.rowIndex="2" />
+            <Label text="Calorias en una porcion:" GridPane.rowIndex="3" />
+            <Label text="Precio:" GridPane.rowIndex="4" />
+            <TextField fx:id="textField_Nombre" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="choiceBox_PiezasPorPorcion" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="choiceBox_TamaniosRacion" prefHeight="25.0" prefWidth="103.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="choiceBox_CaloriasPorcion" prefHeight="25.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="choiceBox_Precio" prefHeight="25.0" prefWidth="106.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="202.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <TextArea fx:id="textArea_Descripcion" layoutX="445.0" layoutY="371.0" prefHeight="65.0" prefWidth="202.0" wrapText="true" />
+      <Label layoutX="316.0" layoutY="379.0" text="Descripcion:" />
+      <Separator layoutX="278.0" layoutY="98.0" prefHeight="17.0" prefWidth="409.0" />
+      <Separator layoutX="278.0" layoutY="449.0" prefHeight="17.0" prefWidth="409.0" />
+      <Label layoutX="278.0" layoutY="81.0" text="Agregar producto:" />
+      <Button layoutX="628.0" layoutY="486.0" mnemonicParsing="false" onAction="#agregarAlimento" text="Agregar" />
+      <Label layoutX="316.0" layoutY="330.0" text="Código:" />
+      <ChoiceBox fx:id="choiceBox_Codigos" layoutX="447.0" layoutY="326.0" prefHeight="25.0" prefWidth="60.0">
+         <tooltip>
+            <Tooltip text="ENT: Entrada, PRN: Plato fuerte, PTR: Postre, BEB: Bebida" wrapText="true" />
+         </tooltip></ChoiceBox>
+      <Label layoutX="517.0" layoutY="330.0" prefHeight="17.0" prefWidth="10.0" text="-" />
+      <ChoiceBox fx:id="choiceBox_Codigo_1" layoutX="532.0" layoutY="326.0" prefHeight="25.0" prefWidth="36.0" />
+      <ChoiceBox fx:id="choiceBox_Codigo_2" layoutX="568.0" layoutY="326.0" prefHeight="25.0" prefWidth="36.0" />
+      <ChoiceBox fx:id="choiceBox_Codigo_3" layoutX="604.0" layoutY="326.0" prefHeight="25.0" prefWidth="36.0" />
+   </children>
+</AnchorPane>

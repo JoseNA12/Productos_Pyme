@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="594.0" prefWidth="961.0" style="-fx-background-color: #f1f1f1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador_Cliente.SolicitarPedido">
+   <children>
+      <Label layoutX="197.0" layoutY="178.0" text="Seleccione el tipo de pedido que desea realizar:" />
+      <ChoiceBox fx:id="checkBoxTipoPedido" layoutX="253.0" layoutY="240.0" prefHeight="25.0" prefWidth="141.0" />
+      <Button fx:id="button_AceptarPedido" layoutX="295.0" layoutY="306.0" mnemonicParsing="false" onAction="#goToProcesarPedido" text="Aceptar" />
+      <Button fx:id="button_Volver" layoutX="197.0" layoutY="434.0" mnemonicParsing="false" onAction="#goToRealizarPedido" text="Volver" />
+      <Button fx:id="button_SolicitarPedido" disable="true" layoutX="585.0" layoutY="434.0" mnemonicParsing="false" onAction="#realizarPedido" text="Solicitar pedido" />
+      <GridPane fx:id="pane_IngresarDatos" disable="true" layoutX="525.0" layoutY="146.0" prefHeight="256.0" prefWidth="218.0">
+         <children>
+            <Label text="Nombre:" />
+            <TextField fx:id="textField_Nombre" disable="true" prefHeight="25.0" prefWidth="251.0" promptText="Ejemplo: Jose Navarro" GridPane.rowIndex="1" />
+            <Label text="Número de celular:" GridPane.rowIndex="2" />
+            <TextField fx:id="textField_Celular" disable="true" promptText="Ejemplo: 89661893" GridPane.rowIndex="3" />
+            <Label text="Direccion exacta:" GridPane.rowIndex="4" />
+            <TextArea fx:id="textArea_Direccion" disable="true" prefHeight="200.0" prefWidth="200.0" promptText="Ejemplo: 100 metros norte y 25  metros del este del Centro Comercial" GridPane.rowIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="102.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="27.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label fx:id="label_MshIngreseDatos" disable="true" layoutX="532.0" layoutY="114.0" text="Por favor, ingrese los siguientes datos:" />
+      <Separator layoutX="477.0" layoutY="95.0" orientation="VERTICAL" prefHeight="396.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>

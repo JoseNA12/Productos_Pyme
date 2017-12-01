@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador_Cliente.RealizarPedido">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="949.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Info">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarAyuda" text="Ayuda" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="41.0" layoutY="55.0" text="Productos disponibles:" />
+      <Label layoutX="293.0" layoutY="55.0" text="Mostrar por tamaño de la ración:" />
+      <ChoiceBox fx:id="choiceBoxMostrarPorTamanio" layoutX="475.0" layoutY="51.0" prefHeight="25.0" prefWidth="98.0" />
+      <Button layoutX="41.0" layoutY="495.0" mnemonicParsing="false" onAction="#agregarAlimentoOrden" text="Agregar al carrito" />
+      <Button fx:id="button_DetallesPlatillo" layoutX="504.0" layoutY="495.0" mnemonicParsing="false" onAction="#verDetallesPlatillo" text="Ver detalles del platillo" />
+      <ChoiceBox fx:id="choiceBoxCantPlatillos" layoutX="282.0" layoutY="495.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label layoutX="177.0" layoutY="499.0" text="Cantidad deseada:" />
+      <Button layoutX="760.0" layoutY="508.0" mnemonicParsing="false" onAction="#goToRealizarPedido" text="Realizar pedido" />
+      <Separator layoutX="665.0" layoutY="51.0" orientation="VERTICAL" prefHeight="503.0" prefWidth="13.0" />
+      <TableView fx:id="tableView_InformacionOrdenActual" layoutX="707.0" layoutY="423.0" prefHeight="63.0" prefWidth="212.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_PrecioTotal" prefWidth="95.0" text="Precio total" />
+          <TableColumn fx:id="tableColumn_TotalCalorias" prefWidth="116.0" text="Total de calorias" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableView_Orden" layoutX="703.0" layoutY="51.0" prefHeight="298.0" prefWidth="212.0">
+        <columns>
+            <TableColumn fx:id="tableColumn_Cantidad" prefWidth="57.0" text="Cantidad" />
+          <TableColumn fx:id="tableColumn_OrdenActual" prefWidth="154.0" text="Orden actual:" />
+        </columns>
+      </TableView>
+      <Button layoutX="760.0" layoutY="363.0" mnemonicParsing="false" onAction="#eliminarAlimentoOrden" text="Eliminar platillo" />
+      <TabPane layoutX="41.0" layoutY="85.0" prefHeight="391.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Entradas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="322.0" prefWidth="535.0">
+                     <children>
+                        <TableView fx:id="tablaView_Entradas_C" prefHeight="362.0" prefWidth="598.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Entradas_C" prefWidth="264.0" text="Entradas disponibles" />
+                              <TableColumn fx:id="tableColumn_Racion_C" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_Calorias_C" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_CaloriasPieza_C" prefWidth="99.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Platos fuertes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaView_PlatosFuertes_C" prefHeight="362.0" prefWidth="598.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Fuerte_C" prefWidth="264.0" text="Platos disponibles" />
+                              <TableColumn fx:id="tableColumn_FuerteRacion_C" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_FuerteCalorias_C" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_FuerteCaloriasPieza_C" prefWidth="99.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Postres">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaView_Postres_C" prefHeight="362.0" prefWidth="598.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Postre_C" prefWidth="264.0" text="Postres disponibles" />
+                              <TableColumn fx:id="tableColumn_PostreRacion_C" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_PostreCalorias_C" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_PostreCaloriasPieza_C" prefWidth="99.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Bebidas">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaView_Bebidas_C" prefHeight="362.0" prefWidth="598.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Bebida_C" prefWidth="264.0" text="Bebidas disponibles" />
+                              <TableColumn fx:id="tableColumn_BebidaRacion_C" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_BebidaCalorias_C" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_BebidaCaloriasPieza_C" prefWidth="99.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Separator layoutX="707.0" layoutY="397.0" prefHeight="10.0" prefWidth="212.0" />
+      <TextField fx:id="textField_AlimentoSeleccionado" editable="false" layoutX="41.0" layoutY="535.0" prefHeight="25.0" prefWidth="292.0" />
+      <Button layoutX="581.0" layoutY="51.0" mnemonicParsing="false" onAction="#aplicarOrdenamientoTablas" text="Mostrar" />
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="175.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/reload.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="175.0" layoutY="51.0" mnemonicParsing="false" onAction="#recargarTablas" opacity="0.2" prefHeight="25.0" prefWidth="25.0">
+         <tooltip>
+            <Tooltip text="Recarga los productos disponibles. Además, reinicia la orde actual." wrapText="true" />
+         </tooltip></Button>
+   </children>
+</AnchorPane>

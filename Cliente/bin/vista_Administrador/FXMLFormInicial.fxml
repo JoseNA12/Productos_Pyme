@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador_Administrador.FormInicial">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="949.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Consultas">
+            <items>
+                  <Menu mnemonicParsing="false" text="Productos">
+                    <items>
+                      <MenuItem fx:id="menuItem_TopDiez" mnemonicParsing="false" onAction="#consultarTopDiez" text="Top - 10" />
+                        <MenuItem fx:id="menuItem_NuncaPedidos" mnemonicParsing="false" onAction="#consultarProductosNuncaPedidos" text="Nunca pedidos" />
+                    </items>
+                  </Menu>
+              <MenuItem fx:id="menuItem_HistorialPedidos" mnemonicParsing="false" onAction="#consultarHistorialPedidos" text="Historial de pedidos" />
+                  <MenuItem fx:id="menuItem_Bitacora" mnemonicParsing="false" onAction="#consultarBitacoraServidor" text="Bitacora" />
+                  <MenuItem fx:id="menuItem_PorcentajePedidos" mnemonicParsing="false" onAction="#consultarPorcentajePedidos" text="Porcentaje entre pedidos" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Servidor">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#cerrarServidor" text="Cerrar Servidor" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="43.0" layoutY="61.0" text="Platillos disponibles:" />
+      <ChoiceBox fx:id="choiceBoxMostrarPorTamanio" layoutX="496.0" layoutY="57.0" prefHeight="25.0" prefWidth="98.0" />
+      <Label layoutX="315.0" layoutY="61.0" text="Mostrar por tamaño de la ración:" />
+      <ChoiceBox fx:id="choiceBoxMostrarPorDisponibilidad" layoutX="193.0" layoutY="529.0" prefHeight="25.0" prefWidth="107.0" />
+      <Label layoutX="43.0" layoutY="533.0" text="Mostrar por disponibilidad:" />
+      <Separator layoutX="680.0" layoutY="46.0" orientation="VERTICAL" prefHeight="511.0" prefWidth="12.0" />
+      <Button layoutX="548.0" layoutY="529.0" mnemonicParsing="false" onAction="#goToAgregarPlatillo" text="Agregar producto" />
+      <TabPane layoutX="43.0" layoutY="89.0" prefHeight="422.0" prefWidth="618.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Entradas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="322.0" prefWidth="535.0">
+                     <children>
+                        <TableView fx:id="tablaView_Entradas_A" prefHeight="393.0" prefWidth="618.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Entradas_A" prefWidth="264.0" text="Entradas disponibles" />
+                              <TableColumn fx:id="tableColumn_Racion_A" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_Calorias_A" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_CaloriasPieza_A" prefWidth="118.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Platos fuertes">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaView_PlatosFuertes_A" prefHeight="393.0" prefWidth="618.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Fuerte_A" prefWidth="264.0" text="Platos disponibles" />
+                              <TableColumn fx:id="tableColumn_FuerteRacion_A" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_FuerteCalorias_A" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_FuerteCaloriasPieza_A" prefWidth="118.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Postres">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaView_Postres_A" prefHeight="393.0" prefWidth="618.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Postre_A" prefWidth="264.0" text="Postres disponibles" />
+                              <TableColumn fx:id="tableColumn_PostreRacion_A" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_PostreCalorias_A" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_PostreCaloriasPieza_A" prefWidth="118.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Bebidas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaView_Bebidas_A" prefHeight="393.0" prefWidth="618.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumn_Bebida_A" prefWidth="264.0" text="Bebidas disponibles" />
+                              <TableColumn fx:id="tableColumn_BebidaRacion_A" prefWidth="137.0" text="Racion" />
+                              <TableColumn fx:id="tableColumn_BebidaCalorias_A" prefWidth="97.0" text="Calorias" />
+                              <TableColumn fx:id="tableColumn_BebidaCaloriasPieza_A" prefWidth="118.0" text="Calorias c/u" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button layoutX="603.0" layoutY="57.0" mnemonicParsing="false" onAction="#aplicarOrdenamientoTablas" text="Mostrar" />
+      <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="162.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/reload.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="162.0" layoutY="57.0" mnemonicParsing="false" onAction="#recargarTablas" opacity="0.2" prefHeight="17.0" prefWidth="25.0">
+         <tooltip>
+            <Tooltip text="Recarga todos los productos almacenados en el servidor" />
+         </tooltip></Button>
+      <TitledPane animated="false" collapsible="false" layoutX="708.0" layoutY="53.0" prefHeight="311.0" prefWidth="209.0" text="               Producto actual">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textField_ProductoActual" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="181.0" />
+                  <Separator layoutX="16.0" layoutY="51.0" prefHeight="7.0" prefWidth="175.0" />
+                  <GridPane layoutX="48.0" layoutY="62.0" prefHeight="146.0" prefWidth="144.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="82.0" minWidth="10.0" prefWidth="45.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="99.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/details.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="36.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../images/edit.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../../images/delete.png" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#verDetallesPlatillo" opacity="0.17" prefHeight="38.0" prefWidth="35.0">
+                           <tooltip>
+                              <Tooltip text="Pulsa para ver la información del producto" />
+                           </tooltip></Button>
+                        <Label text="Detalles" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#goToModificarPlatillo" opacity="0.17" prefHeight="36.0" prefWidth="35.0" GridPane.rowIndex="1">
+                           <tooltip>
+                              <Tooltip text="Pulsa para editar la información del producto" />
+                           </tooltip></Button>
+                        <Label text="Modificar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#eliminarAlimento" opacity="0.17" prefHeight="41.0" prefWidth="39.0" GridPane.rowIndex="2">
+                           <tooltip>
+                              <Tooltip text="Pulsa para eliminar el producto del sevidor" />
+                           </tooltip></Button>
+                        <Label text="Eliminar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="94.0" layoutY="232.0" text="Disponibilidad" />
+                  <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="48.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/show.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="48.0" layoutY="215.0" mnemonicParsing="false" onAction="#habilitarAlimento" opacity="0.18" prefHeight="25.0" prefWidth="40.0">
+                     <tooltip>
+                        <Tooltip text="Pulsa para establecer como Visible el producto" />
+                     </tooltip></Button>
+                  <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="48.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/nonshow.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="48.0" layoutY="246.0" mnemonicParsing="false" onAction="#inhabilitarAlimento" opacity="0.18" prefHeight="25.0" prefWidth="40.0">
+                     <tooltip>
+                        <Tooltip text="Pulsa para establecer como No Visible el producto" />
+                     </tooltip></Button>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TitledPane>
+      <Button layoutX="309.0" layoutY="529.0" mnemonicParsing="false" onAction="#mostrarTablasPorDisponibilidad" prefHeight="25.0" prefWidth="58.0" text="Mostrar" />
+      <TitledPane animated="false" collapsible="false" layoutX="707.0" layoutY="376.0" prefHeight="180.0" prefWidth="211.0" text="              Cargos adicionales">
+         <content>
+            <Accordion prefHeight="161.0" prefWidth="209.0">
+              <panes>
+                <TitledPane prefHeight="169.0" prefWidth="202.0" text="Pedido para llevar">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="131.0" prefWidth="200.0">
+                           <children>
+                              <ChoiceBox fx:id="choiceBox_MontoExtraLlevar" layoutX="62.0" layoutY="20.0" prefHeight="25.0" prefWidth="84.0" />
+                              <Button fx:id="button_EstablecerMontoLlevar" layoutX="69.0" layoutY="65.0" mnemonicParsing="false" onAction="#establecerMontoLlevar" text="Establecer" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane text="Pedido express">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ChoiceBox fx:id="choiceBox_MontoExtraExpress" layoutX="62.0" layoutY="21.0" prefHeight="25.0" prefWidth="84.0" />
+                              <Button fx:id="button_EstablecerMontoExpress" layoutX="69.0" layoutY="63.0" mnemonicParsing="false" onAction="#establecerMontoExpress" text="Establecer" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </content>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

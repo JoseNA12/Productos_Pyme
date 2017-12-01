@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="290.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.IniciarSesion">
+   <children>
+      <Label layoutX="98.0" layoutY="39.0" text="Por favor, ingrese los datos correspondientes:" />
+      <Label layoutX="98.0" layoutY="83.0" text="Usuario:" />
+      <Label layoutX="98.0" layoutY="148.0" text="Contraseña:" />
+      <TextField fx:id="textField_User" layoutX="98.0" layoutY="109.0" prefHeight="25.0" prefWidth="251.0" text="JoseA" />
+      <PasswordField fx:id="PassField_Pass" layoutX="98.0" layoutY="172.0" prefHeight="25.0" prefWidth="251.0" text="1234" />
+      <Button fx:id="button_IniciarSesion" layoutX="264.0" layoutY="231.0" mnemonicParsing="false" onAction="#IniciarSesionUsuario" text="Iniciar sesion" />
+   </children>
+</AnchorPane>
