@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <producto>
+    <codigo>PRN-008</codigo>
+    <nombre>Burrito supremo</nombre>
+    <descripcion>Tortilla de trigo rellena de frijoles molidos, trozos de 
+pollo y queso mozarella, cubierta con lechuga, tomate, aguacate y natilla</descripcion>
+    <tamanoPorcion>400 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>400 kcal</caloriasPorPorcion>
+    <precio>1500.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-021</codigo>
+    <nombre>Sopa de Pollo</nombre>
+    <descripcion>Sopa de pollo con verduras, no incluye arroz</descripcion>
+    <tamanoPorcion>500 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>220 kcal</caloriasPorPorcion>
+    <precio>1500.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-011</codigo>
+    <nombre>Fresco natural de cas</nombre>
+    <descripcion>Incluye pulpa de gas, azucar regular y agua purificada</descripcion>
+    <tamanoPorcion>500 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>120 kcal</caloriasPorPorcion>
+    <precio>1200.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-003</codigo>
+    <nombre>Flan de coco</nombre>
+    <descripcion>Leche, coco rayado, azucar regular, leche condensada</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>320 kcal</caloriasPorPorcion>
+    <precio>2200.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-221</codigo>
+    <nombre>Pizza Extragrande</nombre>
+    <descripcion>Pizza con peperoni, jamon y queso. Incluye hongos</descripcion>
+    <tamanoPorcion>600 gramos</tamanoPorcion>
+    <piezasPorPorcion>8</piezasPorPorcion>
+    <caloriasPorPorcion>1000 kcal</caloriasPorPorcion>
+    <precio>5500.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-052</codigo>
+    <nombre>Papas francesas</nombre>
+    <descripcion>Incluyen salsa de tomate, mayonesa y sal</descripcion>
+    <tamanoPorcion>400 gramos</tamanoPorcion>
+    <piezasPorPorcion>2</piezasPorPorcion>
+    <caloriasPorPorcion>50 kcal</caloriasPorPorcion>
+    <precio>2000.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-013</codigo>
+    <nombre>Fresco de naranja</nombre>
+    <descripcion>Hecho a base de naranjas naturalez, azucar regular y agua purificada</descripcion>
+    <tamanoPorcion>500 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>100 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-006</codigo>
+    <nombre>Tres leches</nombre>
+    <descripcion>Leche, azucar regular, leche condensada, queque humedo, lustre, fresas, piscas de chocolate</descripcion>
+    <tamanoPorcion>200 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>820 kcal</caloriasPorPorcion>
+    <precio>1700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-026</codigo>
+    <nombre>Budin</nombre>
+    <descripcion>Hecho a base de arroz. Algunos de sus ingredientes son: azucares, fibra, protenia, calcio</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>2</piezasPorPorcion>
+    <caloriasPorPorcion>120 kcal</caloriasPorPorcion>
+    <precio>500.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-104</codigo>
+    <nombre>Pastel de queso</nombre>
+    <descripcion>Leche, azucar regular, leche condensada, queso crema, huevos, entre otros</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>2</piezasPorPorcion>
+    <caloriasPorPorcion>320 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-096</codigo>
+    <nombre>Tiramisu</nombre>
+    <descripcion>Hecho a base de galleta de chocolate, cacao en polvo, dulce de leche, cafe molido humedo</descripcion>
+    <tamanoPorcion>200 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>820 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-942</codigo>
+    <nombre>Bebida energetica</nombre>
+    <descripcion>Hecha de azucares, cafe, sabor artificial, colorantes, entre otros</descripcion>
+    <tamanoPorcion>500 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>400 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-383</codigo>
+    <nombre>Juego de frutas con leche</nombre>
+    <descripcion>Hecho a base de naranjas, fresas, banano, melon, azucar regular y leche de vaca</descripcion>
+    <tamanoPorcion>500 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>70 kcal</caloriasPorPorcion>
+    <precio>500.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-013</codigo>
+    <nombre>Juego dietetico</nombre>
+    <descripcion>Hecho a base de naranjas naturalez y agua purificada</descripcion>
+    <tamanoPorcion>500 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>70 kcal</caloriasPorPorcion>
+    <precio>500.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-481</codigo>
+    <nombre>Panqueque salado</nombre>
+    <descripcion>Incluye leche descremada, aceite de oliva, pizcas de sal, huevo, entre otros</descripcion>
+    <tamanoPorcion>600 gramos</tamanoPorcion>
+    <piezasPorPorcion>3</piezasPorPorcion>
+    <caloriasPorPorcion>370 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-021</codigo>
+    <nombre>Champiniones</nombre>
+    <descripcion>Sopa de pollo con verduras, no incluye arroz</descripcion>
+    <tamanoPorcion>500 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>200 kcal</caloriasPorPorcion>
+    <precio>1200.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-278</codigo>
+    <nombre>Lasania de berenjenas con hierbas</nombre>
+    <descripcion>Contiene ajo, hoja de laurel, hojas de salvia
+, laminas de lasania, leche descremada, champiniones, entre otros</descripcion>
+    <tamanoPorcion>300 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>400 kcal</caloriasPorPorcion>
+    <precio>1500.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-102</codigo>
+    <nombre>Pollo y vegetales al curry</nombre>
+    <descripcion>Ingredientes: Muslos de pollo, ajo, zanahoria, papas de piel roja, crema de mani, cabezas de brocoli, entre otros</descripcion>
+    <tamanoPorcion>800 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>400 kcal</caloriasPorPorcion>
+    <precio>1700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-384</codigo>
+    <nombre>Curry de huevos y lentejas</nombre>
+    <descripcion>Huevos, cebolla, ajo, jengibre fresca, tomate, lentejas de lata, caldo de verduras y agua&gt;</descripcion>
+    <tamanoPorcion>1000 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>600 kcal</caloriasPorPorcion>
+    <precio>2200.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-478</codigo>
+    <nombre>Pavo a la naranja</nombre>
+    <descripcion>Incluye pavo, arroz y verduras como ingredientes principales</descripcion>
+    <tamanoPorcion>800 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>600 kcal</caloriasPorPorcion>
+    <precio>1700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-537</codigo>
+    <nombre>Pastelitos de camote y poro</nombre>
+    <descripcion>Incluye camote, carne al horno y pures</descripcion>
+    <tamanoPorcion>900 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>320 kcal</caloriasPorPorcion>
+    <precio>1200.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-030</codigo>
+    <nombre>Pisto con chuletas de cerdo</nombre>
+    <descripcion>Dentro de sus ingredientes de encuentra la carne, chuleta de cerdo, tomates, champiniones, entre otros</descripcion>
+    <tamanoPorcion>500 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>570 kcal</caloriasPorPorcion>
+    <precio>1700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-800</codigo>
+    <nombre>Medallones de cerdo con manzana</nombre>
+    <descripcion>Una de las carnes mas consumidas a nivel mundial es la carne de cerdo, especialmente saludable si el corte es magro. Se ha comprobado que esta carne ayuda a disminuir los niveles de colesterol</descripcion>
+    <tamanoPorcion>1000 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>570 kcal</caloriasPorPorcion>
+    <precio>2200.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-855</codigo>
+    <nombre>Chuletas de cerdo con col</nombre>
+    <descripcion>Las chuletas de cerdo, bajas en grasas, mezcladas con una deliciosa combinacion de col y especias, son un arma poderosa para proteger a tu corazon y combatir el cancer</descripcion>
+    <tamanoPorcion>700 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>750 kcal</caloriasPorPorcion>
+    <precio>2400.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-901</codigo>
+    <nombre>Costillas de cerdo glaseadas</nombre>
+    <descripcion>Incluye 4 costillas de chancho, 4 rajas de manzana, 3 tazas de caldo, sal y pimienta</descripcion>
+    <tamanoPorcion>900 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>720 kcal</caloriasPorPorcion>
+    <precio>2000.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-275</codigo>
+    <nombre>Guiso de berenjenas</nombre>
+    <descripcion>Incluye verduras, berenjenas, huevos, ajos, sal y pimiento, entre otros</descripcion>
+    <tamanoPorcion>400 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>320 kcal</caloriasPorPorcion>
+    <precio>1200.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-649</codigo>
+    <nombre>Coliflor con salsa de queso</nombre>
+    <descripcion>Dentro de sus ingredientes se encuentran la coliflor, queso fresco, pimientos y leche evaporada</descripcion>
+    <tamanoPorcion>300 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>270 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-725</codigo>
+    <nombre>Palta rellena con atun</nombre>
+    <descripcion>Incluye atun, apio, palta y pimientos</descripcion>
+    <tamanoPorcion>200 gramos</tamanoPorcion>
+    <piezasPorPorcion>3</piezasPorPorcion>
+    <caloriasPorPorcion>220 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-021</codigo>
+    <nombre>Brochetas caprese</nombre>
+    <descripcion>Brochetas bajas en calorias. Incluye tomates cherry, quezo mozzrella, albahaca y pimientos</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>70 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-432</codigo>
+    <nombre>Tomates con choclos cocidos</nombre>
+    <descripcion>Incluye tomates rellenos, choclos cocidos, mayonesa, lechuga, peregil y sal</descripcion>
+    <tamanoPorcion>200 gramos</tamanoPorcion>
+    <piezasPorPorcion>3</piezasPorPorcion>
+    <caloriasPorPorcion>70 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-250</codigo>
+    <nombre>Arroz con leche</nombre>
+    <descripcion>Hecho a base arroz, leche, canela y un poco de dulce de leche</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>50 kcal</caloriasPorPorcion>
+    <precio>500.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-296</codigo>
+    <nombre>Tarta de queso</nombre>
+    <descripcion>Hecho a base de yogur natural, leche, harina, azucar, queso cremoso, mermelada, etc</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>2</piezasPorPorcion>
+    <caloriasPorPorcion>50 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-358</codigo>
+    <nombre>Crema Catalana</nombre>
+    <descripcion>Incluye azucar, maicena, leche, limon  huevos</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>2</piezasPorPorcion>
+    <caloriasPorPorcion>70 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-131</codigo>
+    <nombre>Helado de fresa</nombre>
+    <descripcion>Hecho a base de fresas naturales, azucar, vino tinto y gelatina en polvo</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>50 kcal</caloriasPorPorcion>
+    <precio>500.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-299</codigo>
+    <nombre>Pudin de Castanias</nombre>
+    <descripcion>Incluye castanias, huevos, nata liquida y azucar</descripcion>
+    <tamanoPorcion>200 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>100 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-740</codigo>
+    <nombre>Flan de huevo</nombre>
+    <descripcion>Flan hecho a base de leche, azucar, huevos, caramelo y agua</descripcion>
+    <tamanoPorcion>500 gramos</tamanoPorcion>
+    <piezasPorPorcion>5</piezasPorPorcion>
+    <caloriasPorPorcion>100 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-615</codigo>
+    <nombre>Yogur natural</nombre>
+    <descripcion>Hecho a base de yogur natural, leche, azucar, agua, hojas de menta</descripcion>
+    <tamanoPorcion>250 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>120 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>PTR-905</codigo>
+    <nombre>Tarta tres chocolates</nombre>
+    <descripcion>Tarta hecha a base de chocolate negro y blanco, leche, nata liquida, azucar, entre otros</descripcion>
+    <tamanoPorcion>400 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>270 kcal</caloriasPorPorcion>
+    <precio>1500.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-310</codigo>
+    <nombre>Pan de atun</nombre>
+    <descripcion>Hecho a base de pan integral, atun, limon, papas medianas, etc</descripcion>
+    <tamanoPorcion>100 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>100 kcal</caloriasPorPorcion>
+    <precio>500.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-985</codigo>
+    <nombre>Ensalada de verduras asadas</nombre>
+    <descripcion>La ensalada incluye lechuga, cebolla, zapallo, papas, zanahoria, nabo, hojas de menta, etc</descripcion>
+    <tamanoPorcion>300 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>200 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>ENT-251</codigo>
+    <nombre>Sushi mediterraneo</nombre>
+    <descripcion>Incluye pimientos, berenjenas, calabacines, tomates rojos, limon, albahaca, pimientos, etc</descripcion>
+    <tamanoPorcion>300 gramos</tamanoPorcion>
+    <piezasPorPorcion>4</piezasPorPorcion>
+    <caloriasPorPorcion>150 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>PRN-517</codigo>
+    <nombre>Garbanzos</nombre>
+    <descripcion>Hecho a base de verduras, garbanzos, pimientos, ajo, sal, comino, aceite de aliva, etc</descripcion>
+    <tamanoPorcion>500 gramos</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>570 kcal</caloriasPorPorcion>
+    <precio>1500.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-642</codigo>
+    <nombre>Limonada de frambuesa</nombre>
+    <descripcion>Incluye limon, frambuesas, agua, azucar, tequila e hielos</descripcion>
+    <tamanoPorcion>450 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>200 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-260</codigo>
+    <nombre>Agua con limon y chia</nombre>
+    <descripcion>Incluye limon, chia, agua y azucar al gusto</descripcion>
+    <tamanoPorcion>300 ml</tamanoPorcion>
+    <piezasPorPorcion>2</piezasPorPorcion>
+    <caloriasPorPorcion>70 kcal</caloriasPorPorcion>
+    <precio>500.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-071</codigo>
+    <nombre>Agua de coco</nombre>
+    <descripcion>Hecho a base de leche evaporada, agua, almendra, coco rallado, crema de coco, canela, etc</descripcion>
+    <tamanoPorcion>350 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>150 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-360</codigo>
+    <nombre>Coca-Cola</nombre>
+    <descripcion>Incluye azucares. agua, minerales, etc</descripcion>
+    <tamanoPorcion>350 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>400 kcal</caloriasPorPorcion>
+    <precio>1000.0</precio>
+  </producto>
+  <producto>
+    <codigo>BEB-194</codigo>
+    <nombre>Fresco de frutas</nombre>
+    <descripcion>Hecha a base de naranjas, manzanas, fresas, banano y un poco de azucar</descripcion>
+    <tamanoPorcion>350 ml</tamanoPorcion>
+    <piezasPorPorcion>1</piezasPorPorcion>
+    <caloriasPorPorcion>120 kcal</caloriasPorPorcion>
+    <precio>700.0</precio>
+  </producto>
+</menu>

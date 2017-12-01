@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<cuentas>
+
+   <cuenta>
+    <cliente>
+
+        <nombreCuenta>JoseC</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </cliente>
+    <cliente>
+
+        <nombreCuenta>FabricioC</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </cliente>
+    <cliente>
+
+        <nombreCuenta>HansC</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </cliente>
+    <cliente>
+
+        <nombreCuenta>LuisC</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </cliente>
+   </cuenta>
+</cuentas>

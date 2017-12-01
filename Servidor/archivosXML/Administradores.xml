@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<cuentas>
+
+   <cuenta>
+    <administrador>
+
+        <nombreCuenta>JoseA</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </administrador>
+    <administrador>
+
+        <nombreCuenta>FabricioA</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </administrador>
+    <administrador>
+
+        <nombreCuenta>HansA</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </administrador>
+    <administrador>
+
+        <nombreCuenta>LuisA</nombreCuenta>
+        <claveCuenta>1234</claveCuenta>
+    </administrador>
+   </cuenta>
+</cuentas>
